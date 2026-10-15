@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d8edd9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.game-container {
+  background-color: #edf7ee;
+  border-radius: 12px;
+  padding: 25px 35px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 650px;
+  width: 100%;
+}
+
+h1 {
+  color: #207548;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.boards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.player-section h2 {
+  color: #2d8a59;
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 38px);
+  grid-gap: 8px;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.cell {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #28a745;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.15s, background-color 0.2s;
+}
+
+.cell:hover:not(.marked) {
+  transform: scale(1.08);
+  background-color: #218838;
+}
+
+.cell.marked {
+  background-color: #e55353;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  background-color: #62b59d;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #4da38a;
+}
+
+button:disabled {
+  background-color: #b5d5cb;
+  cursor: not-allowed;
+}
+
+.input-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #276749;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  width: 55px;
+  padding: 5px;
+  border: 1px solid #99c2a6;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: 2px solid #62b59d;
+}
+
+#turnStatus {
+  font-size: 15px;
+  font-weight: bold;
+  color: #e55353;
+  min-height: 20px;
+}
