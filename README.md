@@ -34,6 +34,23 @@ npm run dev
 ### 3. Static Web Applications (`Exercise-3_Bingo_Game`, `TechNova`)
 Open `index.html` directly in your browser or run a static file server (e.g. `npx serve .` or VS Code Live Server).
 
+### 4. Java Servlets (`Servlet`)
+- **Start Tomcat:**
+  ```bash
+  tomcat-start   # or: ~/tomcat/bin/startup.sh
+  ```
+- **Compile Servlet:**
+  ```bash
+  cd Servlet
+  ./compile.sh
+  ```
+- **Access in Browser:**
+  Open [http://localhost:8080/Servlet/](http://localhost:8080/Servlet/) in your browser.
+- **Stop Tomcat:**
+  ```bash
+  tomcat-stop    # or: ~/tomcat/bin/shutdown.sh
+  ```
+
 ---
 
 ## 👤 Author

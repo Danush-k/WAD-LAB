@@ -1,4 +1,4 @@
-package Servlet.classes;
+package JavaServlet;
 
 import java.io.*;
 import javax.servlet.*;

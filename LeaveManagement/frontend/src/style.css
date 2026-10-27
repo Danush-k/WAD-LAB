@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  color: #333333;
+  padding: 24px 16px;
+  line-height: 1.5;
+}
+
+input, button {
+  font-family: inherit;
+  font-size: 14px;
+}
